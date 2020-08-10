@@ -3,15 +3,13 @@ import * as React from 'react';
 import { Button, View } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
-import Utenti from './components/Utenti.js'
-import Posts from './components/Posts.js'
-import SignUp from './components/SignUp.js'
-import SignIn from './components/SignIn.js'
-import CercaUtenti from './components/CercaUtenti.js'
-import NewPost from './components/NewPost.js'
-import UserProfile from './components/UserProfile.js'
+import Users from './Users.js'
+import Posts from './Posts.js'
+import SignUp from './SignUp.js'
+import SignIn from './SignIn.js'
+
+
 
 export function HomeScreen({ navigation }) {
   return (
@@ -38,22 +36,12 @@ export function NotificationsScreen({ navigation }) {
   );
 }
 
-
-
-
-
 const Drawer = createDrawerNavigator();
-const Stack = createStackNavigator();
-export default function App() {
+
+export default function Menu() {
   return (
     <NavigationContainer>
-
       <Drawer.Navigator initialRouteName="SignUp">
-        <Drawer.Screen name="Home" component={Posts} />
-        <Drawer.Screen name="Utenti" component={Utenti} />
-        <Drawer.Screen name="Profilo" component={UserProfile} />
-        <Drawer.Screen name="Crea un post" component={NewPost} />
-        <Drawer.Screen name="Cerca Utenti" component={CercaUtenti} />
         <Drawer.Screen name="SignIn" component={SignIn} />
         <Drawer.Screen name="SignUp" component={SignUp} />
       </Drawer.Navigator>
