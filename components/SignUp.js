@@ -9,8 +9,36 @@ import { NavigationContainer } from '@react-navigation/native';
 
 
 //import home from '../App.js'
+// server @ http://localhost:3000/signup
+//import AsyncStorage from '@react-native-community/async-storage'; //added
+
 
 export default class SignUp extends Component {
+//  const [email,setEmail] = useState('');
+//   const [password,setPassword]=useState('')
+//   const sendCred= async (props)=>{
+//     fetch("http://localhost:3000/signup",{
+//       method:"POST",
+//       headers: {
+//        'Content-Type': 'application/json'
+//      },
+//      body:JSON.stringify({
+//        "email":email,
+//        "password":password
+//      })
+//     })
+//     .then(res=>res.json())
+//     .then(async (data)=>{
+//            try {
+//              await AsyncStorage.setItem('token',data.token)
+//              props.navigation.replace("home")
+//            } catch (e) {
+//              console.log("error hai",e)
+//            }
+//     })
+//  }
+
+
 
     state = {
       name:'',  

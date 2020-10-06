@@ -22,7 +22,8 @@ class UserItem2 extends React.Component {
          
         <Image
           style={styles.image}
-          source={require('../assets/hbm.jpg')}
+          //source={require('../assets/hbm.jpg')}
+          source={require('../assets/avatar.png')}
         
         />
         <View style={styles.content_container}>

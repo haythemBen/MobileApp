@@ -54,8 +54,9 @@ export default function App() {
         <Drawer.Screen name="Profilo" component={UserProfile} />
         <Drawer.Screen name="Crea un post" component={NewPost} />
         <Drawer.Screen name="Cerca Utenti" component={CercaUtenti} />
-        <Drawer.Screen name="SignIn" component={SignIn} />
-        <Drawer.Screen name="SignUp" component={SignUp} />
+        {/* <Drawer.Screen name="SignIn" component={SignIn} />
+        <Drawer.Screen name="SignUp" component={SignUp} /> */}
+        <Drawer.Screen name="Esci" component={SignIn} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
